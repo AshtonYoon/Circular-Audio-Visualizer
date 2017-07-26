@@ -1,0 +1,11 @@
+body, html {
+  margin: 0;
+  background-color: #22313F;
+}
+
+.wrapper {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
