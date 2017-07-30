@@ -10,3 +10,41 @@ body, html {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
+
+.file-container{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+#audiofile{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+
+#fake-btn{
+  background-color: #3F4069;
+  border: 1px solid #9E9EC4;
+  border-radius: 3px;
+  padding: 8px 15px;
+  margin-right: 8px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.msg-selected{
+  color: white;
+  font-size: small;
+  font-weight: 100;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  vertical-align: middle;
+}

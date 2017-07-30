@@ -34,6 +34,7 @@ var audioInput = document.getElementById('audiofile');
   audioInput.addEventListener('change', function(event) {
     stream = URL.createObjectURL(event.target.files[0]);
     audio.src = stream;
+    document.getElementsByClassName('msg-selected')[0].innerHTML = event.target.files[0].name;
   });
 
 function draw() {
@@ -53,7 +54,8 @@ function draw() {
     canvasCtx.beginPath()
     canvasCtx.moveTo(x, y)
     canvasCtx.lineTo(x_2, y_2)
-    canvasCtx.strokeStyle = "hsl(" + i + ", 100%, 50%)"
+    //canvasCtx.strokeStyle = "hsl(" + i + ", 100%, 50%)"
+    canvasCtx.strokeStyle = "hsl(0, 100%, 100%)"
     canvasCtx.stroke()
   }
 }
